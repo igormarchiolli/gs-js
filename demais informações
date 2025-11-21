@@ -1,0 +1,68 @@
+O projeto SkillBridge é um formulário de inscrição front-end simples que simula a coleta de dados de um usuário 
+para um sistema de Requalificação Inteligente baseado em IA, focado em desenvolvimento de carreira e aprendizado personalizado.
+  
+🎯 Objetivo Principal
+Coletar informações essenciais do usuário (dados pessoais, habilidades e interesses) para, em um cenário real, 
+alimentar um motor de IA que geraria trilhas de aprendizado sob medida.
+
+O projeto possui:
+  #Inscrição de Usuário: O usuário preenche os campos obrigatórios e registra suas habilidades e interesse principal.
+
+#Adição/Remoção de Habilidades: O usuário pode dinamicamente adicionar habilidades pré-definidas à sua lista 
+  e removê-las clicando nos "chips".
+
+#Validação de Dados: O sistema verifica se todos os campos estão preenchidos corretamente 
+  (ex: formato de CPF e e-mail) antes de "enviar" o formulário.
+
+#Feedback Instantâneo: O usuário recebe mensagens claras de sucesso, erro ou informativo em tempo real.
+
+
+
+
+Requisitos e Dependências:
+  
+Linguagens Utilizadas
+HTML5: Responsável pela Estrutura semântica do formulário, definindo todos os elementos, inputs 
+  e a organização do conteúdo que o usuário visualiza.
+
+CSS3: Garante a Estilização básica do formulário e dos elementos de feedback. 
+  Embora simples, está preparado para um design responsivo (ajuste a diferentes telas).
+
+JavaScript (Puro): É o cérebro do projeto, responsável pela Lógica de interação,
+como a manipulação do DOM para adicionar e remover chips de habilidade, e a crucial validação do formulário antes do envio.
+
+
+
+
+  Arquivos Principais:
+
+index.html: O arquivo principal que contém toda a estrutura HTML e os estilos CSS definidos na seção <style>.
+
+script.js: O arquivo de lógica que contém todas as funções JavaScript para interatividade,
+como a adição/remoção de habilidades e a validação final dos dados.
+
+
+  Manipulação do Array de Habilidades: Utiliza um array (habilidadesSelecionadas) para rastrear as habilidades, 
+garantindo que não haja duplicatas.
+
+Manipulação do DOM: Cria e remove elementos "chip" dinamicamente para representar as habilidades adicionadas.
+
+Validação de Formulário: Verifica:
+
+Preenchimento de campos obrigatórios.
+
+Formato básico de E-mail (contém @ e .).
+
+Verificação simples de CPF (11 dígitos numéricos).
+
+Função de Feedback: Função utilitária (exibirFeedback) para alterar dinamicamente 
+  o conteúdo e as cores de fundo/borda do div de feedback (#feedback).
+
+
+  Próximos Passos (Para expansão do Projeto) :
+Integração com Backend: Enviar os dados do formulário para um servidor (via Fetch API ou AJAX) para processamento real pela IA.
+
+Armazenamento Local: Usar localStorage para manter os dados do usuário salvos no navegador.
+
+Estilização Avançada: Melhorar o design utilizando um framework CSS (como Bootstrap) ou pré-processadores.
+  
